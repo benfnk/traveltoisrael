@@ -1,0 +1,106 @@
+
+
+
+#doc_title {
+padding:10px;
+  margin-left: 200px;
+  width: 100%;
+  height: 110px;
+  position: relative;
+color: #fff;
+}
+
+#logo {
+  position: fixed;
+  top: 40px;
+  left: 20px;
+  max-width: 170px;
+}
+
+#doc_type {
+  font-style: italic;
+  font-size: 18px;
+margin-top: 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: 28px;
+  color: #cfb87c;
+}
+
+section, footer {
+  padding-top: 50px;
+  }
+
+h2 {
+  font-weight: bold;
+  font-size: 32px;
+  color: #cfb87c;
+}
+
+#trip_date {
+  margin: 0;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  font-size: 22px;
+  }
+
+table{
+/* border: 1px solid grey; */
+width: 100%;
+border: 1px solid #cfb87c;
+border-radius: 50%;
+}
+
+th {
+background: #cfb87c;
+color: #fff;
+}
+
+td, th {
+padding: 5px;
+/* height:2em; */
+text-align: center;
+}
+
+.narrow {
+width: 10%;
+}
+
+.times {
+width: 18%;
+}
+
+.times_sub {
+width: 9%;
+font-size:95%;
+font-weight: normal;
+}
+
+/* thead {
+  display: table-header-group;
+} */
+
+/* table { page-break-inside: avoid; } */
+/* div.multiline { white-space: pre-wrap;} */
+
+.open{
+  padding-top: 70px;
+  width:90%;
+  padding-left: 10%;
+}
+
+.details{
+  padding-top: 20px;
+  width:90%;
+  padding-left: 10%;
+}
+
+.details2{
+  padding-top: 20px;
+  width:90%;
+  padding-left: 10%;
+  padding-bottom: 50px;
+}

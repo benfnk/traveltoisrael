@@ -1,0 +1,199 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:700,300);
+/*
+First just get the basic type styling done. Just the essentials.
+*/
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  font-family: 'Oswald';
+  font-weight: 300;
+}
+
+.lc {
+  text-transform: none;
+}
+
+h1,
+strong {
+  font-weight: 700;
+}
+/*
+Now address font sizing, overall width, and typographic heirarchy
+*/
+
+h1 {
+  font-size: 200px;
+  letter-spacing: -10px;
+  line-height: 184px;
+}
+
+h2 {
+  width: 300px;
+  font-size: 28px;
+}
+
+h3 {
+  font-size: 20px;
+  width: 200px;
+}
+
+h3 strong {
+  display: block;
+  font-size: 32px;
+}
+/*
+Now, we can begin to think about polishing the layout NOTE: I like to use the "outline" trick to visualize the CSS boxes
+*/
+
+p,
+h1 {
+  outline: px solid red;
+}
+/*
+The headline is pretty easy if we use <span>'s as block level elements to isolate each word then simply use text-align and a few custom classes (and an advanced selector) to really tweak everything.
+*/
+
+h1 span {
+  display: block;
+}
+
+h1 span:last-child {
+  color: lightblue;
+}
+
+.flush-right {
+  text-align: right;
+}
+
+.bg-nudge {
+  margin-right: 183px;
+}
+
+.sm-nudge {
+  margin-left: px;
+}
+/*
+With a "grouping" parent container in place to define the width of our layout we can use positioning to carefully craft a precise layout.
+*/
+
+header {
+  width: 800px;
+  margin: auto;
+}
+/*NOTE! The "Trick" is to explicitly set postitoning on the parent element <header> so all of it's children <h2,h3> come along for the ride. (SEE https://css-tricks.com/absolute-positioning-inside-relative-positioning/) */
+
+header {
+  position: relative;
+}
+
+h2,
+h3 {
+  position: absolute;
+}
+/*Forget "margin and padding" and just remember "TRouBLe" (top: left: bottom: and right:) to place the "position absolute" children where they belong realtive to their parent's origin'
+*/
+
+h2 {
+  top: 170px;
+  left: 520px;
+  /* it's okay to keep tweaking when needed'*/
+  
+  line-height: 34px;
+}
+
+h3 {
+  top: 370px;
+  left: 10px;
+  /* don't forget text-align as a layout tool!*/
+  
+  text-align: right;
+}
+
+h3 strong {
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+/*
+A bottom-border is what you want, but it will be full width of the h3, so instead we use an "empty" psuedo element to "draw" a line with another CSSbox allowing us the freedomw to size, color, and position it exactly where we want.
+*/
+
+h3 strong::before {
+  content: "";
+  height: 3px;
+  width: 50px;
+  background-color: black;
+  position: absolute;
+  right: 0;
+  top: 75px;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+p em {
+  text-transform: uppercase;
+  font-style: normal;
+}
+/*drop cap with clever selector*/
+
+p:first-letter {
+  font-size: 300px;
+  line-height: 260px;
+  font-family: 'Oswald';
+  font-weight: 700;
+  float: left;
+  margin-right: 20px;
+  text-shadow: 16px 8px 0 white, 20px 10px 0 black;
+  ;
+}
+/*COLOPHON: (creating the stripes)
+For what it's worth, I'd add a similar border-top+psuedo element trick to top the first paragraph since it's narrow width is the determining factor in the look of this layout*/
+
+p {
+  /*explicity set positioning as a the parent*/
+  
+  position: relative;
+  width: 500px;
+  margin: auto;
+  border-top: 8px double black;
+  margin-top: 50px;
+  padding-top: 50px;
+}
+
+p:before,
+p:after {
+  /*absolutely position these "children"*/
+  
+  position: absolute;
+  content: "";
+  width: 100%;
+  border-top: 8px double black;
+}
+
+p:before {
+  top: -18px;
+  left: 0;
+}
+
+p:after {
+  top: -28px;
+  left: 0;
+}
+/*Adding the final touch form the print layout sans-page number*/
+
+p {
+  padding-bottom: 20px;
+  border-bottom: 3em solid black;
+}
+/*A small "reset" touch to help visualize the lesson by getting it away from the edges of the browser window*/
+
+body {
+  padding: 50px;
+  padding-bottom: 0;
+}

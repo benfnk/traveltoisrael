@@ -1,0 +1,38 @@
+  /* ------------------Header block-------------------- */
+  header {  
+	background: url("https://upload.wikimedia.org/wikipedia/commons/6/6d/%D7%96%D7%A8%D7%99%D7%97%D7%94_%D7%91%D7%99%D7%9D_%D7%94%D7%9E%D7%9C%D7%97.jpg")
+	  no-repeat left top / cover;
+      height: 60vh;
+  }
+  
+  
+  .promo {
+	text-align: center;
+  }
+  
+  .promo p {
+	display: inline-block;
+	margin-right: -6px;
+	padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 250px;
+	font-family: "Vollkorn", serif;
+	font-size: 40px;
+	text-transform: capitalize;
+	color: #ffffff;
+	letter-spacing: 0.069em;
+  }
+  
+  .promo h1 {
+	
+	padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10%;
+  margin-top: 0px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	font-size: 74px;
+	color: #fff;
+	text-transform: uppercase;
+  letter-spacing: -0.03em;
+  }

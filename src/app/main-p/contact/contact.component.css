@@ -1,0 +1,53 @@
+html, 
+body{
+  color: #000;
+  /*background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/%D7%94%D7%9B%D7%A0%D7%A8%D7%AA_%D7%9E%D7%9E%D7%A2%D7%95%D7%A3_%D7%94%D7%A6%D7%99%D7%A4%D7%95%D7%A8.jpg/1920px-%D7%94%D7%9B%D7%A0%D7%A8%D7%AA_%D7%9E%D7%9E%D7%A2%D7%95%D7%A3_%D7%94%D7%A6%D7%99%D7%A4%D7%95%D7%A8.jpg') !important;
+  */background-color: #fff;
+  font-family: "Roboto", sans-serif;
+    }
+    .contact-form {
+        padding: 50px;
+        margin: 30px auto;
+    }	
+    .contact-form h1 {
+        font-size: 42px;
+        font-family: 'Pacifico', sans-serif;
+        margin: 0 0 50px;
+        text-align: center;
+    }
+    .contact-form .form-group {
+        margin-bottom: 20px;
+    }
+    .contact-form .form-control, .contact-form .btn {
+        min-height: 38px;
+        border-radius: 2px;
+    }
+	.contact-form .form-control {
+		border-color: #000;
+	}
+	.contact-form .form-control:focus {
+		border-color: #000;
+		box-shadow: 0 0 8px #000;
+	}
+    .contact-form .btn-primary {
+        min-width: 250px;
+        color: #fff;
+        background: #000;
+        margin-top: 20px;
+        border: none;
+    }
+    .contact-form .btn-primary:hover {
+        color: #fff; 
+    }
+    .contact-form .btn-primary i {
+        margin-right: 5px;
+    }
+    .contact-form label {
+        opacity: 0.9;
+    }
+    .contact-form textarea {
+        resize: vertical;
+    }
+    .bs-example {
+    	margin: 20px;
+    }

@@ -1,0 +1,46 @@
+body {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1.25;
+  }
+  table {
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	table-layout: fixed;
+	width: 100%;
+  }
+  table caption {
+	font-size: 3.5em;
+	margin: .5em 0 .75em;
+  }
+  table tr {
+	border: 1px solid #ddd;
+	padding: .35em;
+  }
+  table tr:nth-child(even) {
+	background: #f8f8f8;  
+  }
+  table th,
+  table td {
+	padding: .625em;
+	text-align: left;
+	font-size: 1.4em;
+  }
+  table th {
+	background: #cfb87c;
+	color: #fff;
+	font-size: 1.7em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+  }
+  table td {
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+  }
+  table{
+	width:66%; 
+	  margin-left:17.5%; 
+		margin-right:17.5%;
+		padding-top: 60px;
+		margin-bottom: 30px;
+  }
